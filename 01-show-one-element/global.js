@@ -1,5 +1,11 @@
-window.addEventListener("load", function(){
+window.addEventListener('load', function(){
+    const lnk = document.getElementById('more_text_link');
+    const txt = document.getElementById('more_text_content');
 
+  lnk.addEventListener('click', function(){
+    txt.style.display = 'initial';
+    lnk.style.display = 'none';
+  });
   // Here is some pseudo-code to help you get started:
 
   // 1. Get the DOM element which will be clicked.
